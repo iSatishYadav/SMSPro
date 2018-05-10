@@ -109,7 +109,7 @@ That’s all! Happy Coding!
 
 [Link: Application Registration]:https://ebiz.bpc.co.in/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
 [Link: .NET Client SDK]:client-sdk
-[Link: Code Samples]:http://myspace.iconnect.com/my/satishkyadav/Sms/_layouts/15/start.aspx#/SMS%20Pro%20Code%20Samples/Home.aspx?utm_source=Docs&utm_medium=Prod
+[Link: Code Samples]:code-samples
 
 [Endpoint: OAuth2 Token]: https://ebiz.bpc.co.in/SMS/oauth2/token
 
