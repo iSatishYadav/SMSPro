@@ -108,7 +108,7 @@ e.g. If you send invalid `Mobile` and message with more than 160 characters, You
 That’s all! Happy Coding!
 
 [Link: Application Registration]:https://ebiz.bpc.co.in/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
-[Link: .NET Client SDK]:http://myspace.iconnect.com/my/satishkyadav/Sms/SMS%20Pro%20Client%20SDK%20C/Home.aspx?utm_source=Docs&utm_medium=Prod
+[Link: .NET Client SDK]:client-sdk.md
 [Link: Code Samples]:http://myspace.iconnect.com/my/satishkyadav/Sms/_layouts/15/start.aspx#/SMS%20Pro%20Code%20Samples/Home.aspx?utm_source=Docs&utm_medium=Prod
 
 [Endpoint: OAuth2 Token]: https://ebiz.bpc.co.in/SMS/oauth2/token
