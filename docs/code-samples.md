@@ -1,7 +1,7 @@
 # ​Calling SMSPro API: Code Samples
 This document contains code samples for calling _SMSPro OAuth2 REST_ API.
 
-## 1. C#
+## 1. C# (.NET)
 There is a [SMSPro Client SDK (.NET)][Link: .NET Client SDK], you can use that to send SMS in just one line of code. 
 
 Or continue...​
