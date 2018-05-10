@@ -107,10 +107,10 @@ e.g. If you send invalid `Mobile` and message with more than 160 characters, You
 ````
 That’s all! Happy Coding!
 
-[Link: Application Registration]:https://<dev_server_link>/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
+[Link: Application Registration]:https://dev_server/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
 [Link: .NET Client SDK]:../client-sdk
 [Link: Code Samples]:../code-samples
 
-[Endpoint: OAuth2 Token]: https://<dev_server_link>SMS/oauth2/token
+[Endpoint: OAuth2 Token]: https://dev_server/SMS/oauth2/token
 
-[Endpoint: SMS API]: https://<dev_server_link>/SMS/api/SMS
+[Endpoint: SMS API]: https://dev_server/SMS/api/SMS
