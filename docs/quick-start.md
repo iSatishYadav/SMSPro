@@ -105,6 +105,20 @@ e.g. If you send invalid `Mobile` and message with more than 160 characters, You
   }
 }
 ````
+## 4. Correlation
+A header is sent with _Correlation Id_ in `Response`.
+
+e.g. 
+
+````http
+HTTP
+...
+X-SMSPro-CorrelationId: 1ebc758c-605f-4e99-825a-8b5c5ae9656b
+...
+
+````
+
+
 That’s all! Happy Coding!
 
 [Link: Application Registration]:https://ebiz.bpc.co.in/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
