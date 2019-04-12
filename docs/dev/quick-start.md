@@ -88,7 +88,7 @@ Pass a collection of `Mobile` and `Message`, and `Id`. For validations see secti
 Your request may look like this.
 
 ````HTTP
-POST .../​​api/SMS HTTP/1.1
+POST .../api/BulkSMS HTTP/1.1
 Host: localhost:1472
 Authorization: Bearer NJzhrzHTzZ_oJh7XK0i-l9VnEh-1_ssW... --Shortened for brevity
 Content-Type: application/json
@@ -109,10 +109,23 @@ Content-Type: application/json
 ````
 
 ### 2.2.2 Response
-Since this is a batch request, you'll `HTTP 200 (Success)` and error codes (if any) corresponding to item(s) in collection.
+Since this is a batch request, you may get following response:
+1. If everything is okay, you'll get an `HTTP 200 (Success)`.
 
-Response may look like this.
-
+````HTTP
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+````
+````JSON
+{
+  "SMSPro-Correlation-Id": "80c596f0-0f21-4e6b-b543-bb98fdb0b8f3"
+}
+````
+2.  In case there are any validation errors in any of the item in collection, you'll get an `HTTP 202 (Accepted)` with response error codes corresponding to item(s) in collection.
+````HTTP
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+````
 ````JSON
 [
   {
@@ -124,7 +137,8 @@ Response may look like this.
     "error": {
       "Mobile": "Mobile should be a valid Indian mobile number.",
       "Message": "Message can only be 160 characters."
-    }    
+    },
+    "smspro-correlation-id": "d2b09811-1f9c-4c80-a08c-9b7e17c8a658"
   }
 ]
 ````
@@ -180,3 +194,5 @@ That’s all! Happy Coding!
 [Endpoint: OAuth2 Token]: https://dev_server/SMS/oauth2/token
 
 [Endpoint: SMS API]: https://dev_server/SMS/api/SMS
+
+[Endpoint: Bulk SMS API]: https://dev_server/SMS/api/BulkSMS
