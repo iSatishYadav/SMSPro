@@ -110,7 +110,8 @@ Content-Type: application/json
 
 ### 2.3.2 Response
 Since this is a batch request, you may get following response:
-1. If everything is okay, you'll get an `HTTP 200 (Success)`.
+
+1. If everything is okay, you'll get an `HTTP 200 (Success)
 
 ````HTTP
 HTTP/1.1 200 OK
@@ -121,7 +122,9 @@ Content-Type: application/json; charset=utf-8
   "SMSProCorrelationId": "80c596f0-0f21-4e6b-b543-bb98fdb0b8f3"
 }
 ````
+
 2.  In case there are any validation errors in any of the item in collection, you'll get an `HTTP 202 (Accepted)` with response error codes corresponding to item(s) in collection.
+
 ````HTTP
 HTTP/1.1 202 OK
 Content-Type: application/json; charset=utf-8
