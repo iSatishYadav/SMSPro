@@ -108,7 +108,7 @@ Content-Type: application/json
 ]
 ````
 
-### 2.2.2 Response
+### 2.3.2 Response
 Since this is a batch request, you may get following response:
 1. If everything is okay, you'll get an `HTTP 200 (Success)`.
 
