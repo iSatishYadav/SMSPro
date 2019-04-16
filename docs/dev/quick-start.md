@@ -118,12 +118,12 @@ Content-Type: application/json; charset=utf-8
 ````
 ````JSON
 {
-  "SMSPro-Correlation-Id": "80c596f0-0f21-4e6b-b543-bb98fdb0b8f3"
+  "SMSProCorrelationId": "80c596f0-0f21-4e6b-b543-bb98fdb0b8f3"
 }
 ````
 2.  In case there are any validation errors in any of the item in collection, you'll get an `HTTP 202 (Accepted)` with response error codes corresponding to item(s) in collection.
 ````HTTP
-HTTP/1.1 200 OK
+HTTP/1.1 202 OK
 Content-Type: application/json; charset=utf-8
 ````
 ````JSON
@@ -137,8 +137,7 @@ Content-Type: application/json; charset=utf-8
     "error": {
       "Mobile": "Mobile should be a valid Indian mobile number.",
       "Message": "Message can only be 160 characters."
-    },
-    "smspro-correlation-id": "d2b09811-1f9c-4c80-a08c-9b7e17c8a658"
+    }
   }
 ]
 ````
