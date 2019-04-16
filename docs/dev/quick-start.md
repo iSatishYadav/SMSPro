@@ -123,7 +123,7 @@ Content-Type: application/json; charset=utf-8
 }
 ````
 
-2.  In case there are any validation errors in any of the item in collection, you'll get an `HTTP 202 (Accepted)` with response error codes corresponding to item(s) in collection.
+2. In case there are any validation errors in any of the item in collection, you'll get an `HTTP 202 (Accepted)` with response error codes corresponding to item(s) in collection.
 
 ````HTTP
 HTTP/1.1 202 OK
