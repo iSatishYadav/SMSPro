@@ -119,7 +119,7 @@ Content-Type: application/json; charset=utf-8
 ````
 ````JSON
 {
-  "SMSProCorrelationId": "80c596f0-0f21-4e6b-b543-bb98fdb0b8f3"
+  "smspro_correlation_id": "80c596f0-0f21-4e6b-b543-bb98fdb0b8f3"
 }
 ````
 
