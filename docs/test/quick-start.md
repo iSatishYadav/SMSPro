@@ -194,3 +194,5 @@ That’s all! Happy Coding!
 [Endpoint: OAuth2 Token]: https://testmy.ebharatgas.com/SMS/oauth2/token
 
 [Endpoint: SMS API]: https://testmy.ebharatgas.com/SMS/api/SMS
+
+[Endpoint: Batch SMS API]: https://testmy.ebharatgas.com/SMS/api/Batch

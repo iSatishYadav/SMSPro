@@ -194,3 +194,5 @@ That’s all! Happy Coding!
 [Endpoint: OAuth2 Token]: https://ebiz.bpc.co.in/SMS/oauth2/token
 
 [Endpoint: SMS API]: https://ebiz.bpc.co.in/SMS/api/SMS
+
+[Endpoint: Batch SMS API]: https://ebiz.bpc.co.in/SMS/api/Batch
