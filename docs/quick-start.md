@@ -77,6 +77,7 @@ If everything goes okay, you’ll get an `HTTP 204 (No Content)` or `HTTP 202 (A
 
 If any validation fails, you’ll get `HTTP 400 (Bad Request)`. Read section 3 for more about validations.
 
+
 ## 2.3 Using Token to call Batch SMS API
 Send a `POST` request to [/api/Batch][Endpoint: Batch SMS API] endpoint.
 Pass a collection of `mobile` and `message`, and `id`. For validations see section 3 of this document.
@@ -101,8 +102,13 @@ Content-Type: application/json
   },
   {
     "id": "a68f579e-53dc-4fc2-a848-495166bdbb41",
-    "message": "This is another test SMS which has more than 160 characters turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est",
+    "message": "",
     "mobile": "1234567890"
+  },
+  {
+    "id": "a7dc3caa-bd21-49a9-b119-12af7f89b738",
+    "mobile": "",
+    "message": "This is a valid test SMS."
   }
 ]
 ````
@@ -110,19 +116,15 @@ Content-Type: application/json
 ### 2.3.2 Response
 Since this is a batch request, you may get following response:
 
-* If everything is okay, you'll get an `HTTP 200 (Success)
+* If everything is okay, you'll get an `HTTP 204 (No Content)
 
 ````HTTP
-HTTP/1.1 200 OK
-Content-Type: application/json; charset=utf-8
-````
-````JSON
-{
-  "smspro_correlation_id": "80c596f0-0f21-4e6b-b543-bb98fdb0b8f3"
-}
+HTTP/1.1 204 No Content
 ````
 
-* In case there are any validation errors in any of the item in collection, you'll get an `HTTP 202 (Accepted)` with response error codes corresponding to item(s) in collection. Rest other valid items would be processed and SMS would be sent.
+* In case there are any validation errors in any of the item in collection, you'll get an `HTTP 202 (Accepted)` with response errors corresponding to item(s) in collection.
+
+> Rest of the valid items would be processed and SMS would be sent.
 
 ````HTTP
 HTTP/1.1 202 OK
@@ -133,16 +135,34 @@ Content-Type: application/json; charset=utf-8
   {
     "request": {
       "id": "a68f579e-53dc-4fc2-a848-495166bdbb41",
-      "message": "This is another test SMS which has more than 160 characters turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est",
-      "mobile": "1234567890"
+      "mobile": "1234567890",
+      "message": ""
     },
     "error": {
-      "Mobile": "Mobile should be a valid Indian mobile number.",
-      "Message": "Message can only be 160 characters."
+      "Mobile": [
+        "Mobile should be a valid indian mobile number with/without +91/0."
+      ],
+      "Message": [
+        "The Message field is required.",
+        "Message doesn't contain all the configured keywords."
+      ]
+    }
+  },
+  {
+    "request": {
+      "id": "a7dc3caa-bd21-49a9-b119-12af7f89b738",
+      "mobile": "",
+      "message": "This is a valid test SMS."
+    },
+    "error": {
+      "Mobile": [
+        "The Mobile field is required."
+      ]
     }
   }
 ]
 ````
+
 
 ## 3. Validations
 Following are the basic validation.
@@ -171,6 +191,7 @@ e.g. If you send invalid `Mobile` and message with more than 160 characters, You
   }
 }
 ````
+
 ## 4. Correlation
 A header is sent with _Correlation Id_ in `Response`.
 
@@ -184,12 +205,11 @@ X-SMSPro-CorrelationId: 1ebc758c-605f-4e99-825a-8b5c5ae9656b
 
 ````
 
-
 That’s all! Happy Coding!
 
 [Link: Application Registration]:https://ebiz.bpc.co.in/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
-[Link: .NET Client SDK]:client-sdk
-[Link: Code Samples]:code-samples
+[Link: .NET Client SDK]:../client-sdk
+[Link: Code Samples]:../code-samples
 
 [Endpoint: OAuth2 Token]: https://ebiz.bpc.co.in/SMS/oauth2/token
 
