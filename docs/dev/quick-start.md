@@ -162,7 +162,81 @@ Content-Type: application/json; charset=utf-8
   }
 ]
 ````
+## 2.4 Using Token to call Delivery OData API
+This endpoint is an `OData` endpoint, you can filter, sort, page, and select just like any other `OData` endpoint.
 
+Read about OData more [here][Endpoint: OData Basics].
+
+
+### 2.4.1 Request
+
+Send a `GET` request to [/odata/Delivery][Endpoint: Delivery OData API] endpoint.
+
+````HTTP
+GET /Sms/odata/Delivery?$skip=10&$top=10&$orderby=CreatedOn&$filter=Status eq 'Delivered' or Status eq 'Failed' HTTP/1.1
+Authorization: Bearer C_6ixXoQT...
+````
+
+### 2.4.2 Response
+Response will be an HTTP 200 and should look like this:
+
+````HTTP
+HTTP/1.1 200 Ok
+````
+````JSON
+{
+    "@odata.context": "http://[Server_Name]]/Sms/odata/$metadata#Delivery",
+    "value": [
+        {
+            "Id": "18437568-6a70-4ec5-9af4-0731e89760cc",
+            "Mobile": "9123456789",
+            "Status": "Delivered",
+            "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
+            "UpdatedOn": "2019-05-17T22:10:57.9086437+05:30",
+            "SubmittedOn": "2019-05-16T15:41:32+05:30",
+            "DeliveredOn": "2019-05-16T15:41:37+05:30"
+        },
+        {
+            "Id": "6b1ebfbb-0cfb-4001-a6ce-847277daa3c3",
+            "Mobile": "9876543210",
+            "Status": "Sent",
+            "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
+            "UpdatedOn": "2019-05-17T22:11:05.7526298+05:30",
+            "SubmittedOn": null,
+            "DeliveredOn": null
+        },
+        {
+            "Id": "473de73e-194b-45a5-88c8-84b0a00a79d8",
+            "Mobile": "9123456789",
+            "Status": "Failed",
+            "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
+            "UpdatedOn": "2019-05-17T22:11:10.5027481+05:30",
+            "SubmittedOn": "2019-05-16T15:41:32+05:30",
+            "DeliveredOn": "2019-05-16T15:41:37+05:30"
+        },
+        {
+            "Id": "7009ae1a-d959-4c10-a785-eebccfa65190",
+            "Mobile": "9876543210",
+            "Status": "Delivered",
+            "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
+            "UpdatedOn": "2019-05-17T22:10:57.9242736+05:30",
+            "SubmittedOn": "2019-05-16T15:41:32+05:30",
+            "DeliveredOn": "2019-05-16T15:41:37+05:30"
+        },
+        {
+            "Id": "f1d24506-55b0-4d95-abcc-f55a80d229d8",
+            "Mobile": "9123456789",
+            "Status": "Sent",
+            "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
+            "UpdatedOn": "2019-05-17T22:11:10.3152401+05:30",
+            "SubmittedOn": "2019-05-16T15:41:32+05:30",
+            "DeliveredOn": null
+        }
+    ]
+}
+````
+
+* In case there are any validation errors you'll get an HTTP 400 along with error messages.
 
 ## 3. Validations
 Following are the basic validation.
@@ -216,3 +290,7 @@ That’s all! Happy Coding!
 [Endpoint: SMS API]: https://dev_server/SMS/api/SMS
 
 [Endpoint: Batch SMS API]: https://dev_server/SMS/api/Batch
+
+[Endpoint: Delivery OData API]: https://dev_server/SMS/odata/Delivery
+
+[Endpoint: OData Basics]: https://www.odata.org/getting-started/basic-tutorial/
