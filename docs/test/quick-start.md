@@ -193,7 +193,6 @@ HTTP/1.1 200 Ok
             "Status": "Delivered",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:10:57.9086437+05:30",
-            "SubmittedOn": "2019-05-16T15:41:32+05:30",
             "DeliveredOn": "2019-05-16T15:41:37+05:30"
         },
         {
@@ -202,7 +201,6 @@ HTTP/1.1 200 Ok
             "Status": "Sent",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:11:05.7526298+05:30",
-            "SubmittedOn": null,
             "DeliveredOn": null
         },
         {
@@ -211,7 +209,6 @@ HTTP/1.1 200 Ok
             "Status": "Failed",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:11:10.5027481+05:30",
-            "SubmittedOn": "2019-05-16T15:41:32+05:30",
             "DeliveredOn": "2019-05-16T15:41:37+05:30"
         },
         {
@@ -220,7 +217,6 @@ HTTP/1.1 200 Ok
             "Status": "Delivered",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:10:57.9242736+05:30",
-            "SubmittedOn": "2019-05-16T15:41:32+05:30",
             "DeliveredOn": "2019-05-16T15:41:37+05:30"
         },
         {
@@ -229,7 +225,6 @@ HTTP/1.1 200 Ok
             "Status": "Sent",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:11:10.3152401+05:30",
-            "SubmittedOn": "2019-05-16T15:41:32+05:30",
             "DeliveredOn": null
         }
     ]
@@ -291,3 +286,7 @@ That’s all! Happy Coding!
 [Endpoint: SMS API]: https://testmy.ebharatgas.com/SMS/api/SMS
 
 [Endpoint: Batch SMS API]: https://testmy.ebharatgas.com/SMS/api/Batch
+
+[Endpoint: Delivery OData API]: https://testmy.ebharatgas.com/SMS/odata/Delivery
+
+[Endpoint: OData Basics]: https://www.odata.org/getting-started/basic-tutorial/
