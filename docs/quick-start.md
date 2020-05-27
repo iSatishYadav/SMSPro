@@ -285,3 +285,7 @@ That’s all! Happy Coding!
 [Endpoint: SMS API]: https://ebiz.bpc.co.in/SMS/api/SMS
 
 [Endpoint: Batch SMS API]: https://ebiz.bpc.co.in/SMS/api/Batch
+
+[Endpoint: Delivery OData API]: https://ebiz.bpc.co.in/SMS/odata/Delivery
+
+[Endpoint: OData Basics]: https://www.odata.org/getting-started/basic-tutorial/
