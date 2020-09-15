@@ -185,7 +185,7 @@ HTTP/1.1 200 Ok
 ````
 ````JSON
 {
-    "@odata.context": "http://[Server_Name]]/Sms/odata/$metadata#Delivery",
+    "@odata.context": "http://[Server_Name]/Sms/odata/$metadata#Delivery",
     "value": [
         {
             "Id": "18437568-6a70-4ec5-9af4-0731e89760cc",
