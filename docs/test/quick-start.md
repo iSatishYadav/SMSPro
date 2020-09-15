@@ -193,7 +193,8 @@ HTTP/1.1 200 Ok
             "Status": "Delivered",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:10:57.9086437+05:30",
-            "DeliveredOn": "2019-05-16T15:41:37+05:30"
+            "DeliveredOn": "2019-05-16T15:41:37+05:30",
+            "Reason": "HTTP_Delivery Success"
         },
         {
             "Id": "6b1ebfbb-0cfb-4001-a6ce-847277daa3c3",
@@ -201,7 +202,8 @@ HTTP/1.1 200 Ok
             "Status": "Sent",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:11:05.7526298+05:30",
-            "DeliveredOn": null
+            "DeliveredOn": null,
+            "Reason": "Sent Success To Service Provider Via HTTP"
         },
         {
             "Id": "473de73e-194b-45a5-88c8-84b0a00a79d8",
@@ -209,7 +211,8 @@ HTTP/1.1 200 Ok
             "Status": "Failed",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:11:10.5027481+05:30",
-            "DeliveredOn": "2019-05-16T15:41:37+05:30"
+            "DeliveredOn": "2019-05-16T15:41:37+05:30",
+            "Reason": "Message failed/expired"
         },
         {
             "Id": "7009ae1a-d959-4c10-a785-eebccfa65190",
@@ -217,7 +220,8 @@ HTTP/1.1 200 Ok
             "Status": "Delivered",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:10:57.9242736+05:30",
-            "DeliveredOn": "2019-05-16T15:41:37+05:30"
+            "DeliveredOn": "2019-05-16T15:41:37+05:30",
+            "Reason": "HTTP_Delivery Success"
         },
         {
             "Id": "f1d24506-55b0-4d95-abcc-f55a80d229d8",
@@ -225,7 +229,8 @@ HTTP/1.1 200 Ok
             "Status": "Sent",
             "CreatedOn": "2019-05-16T15:41:31.9866667+05:30",
             "UpdatedOn": "2019-05-17T22:11:10.3152401+05:30",
-            "DeliveredOn": null
+            "DeliveredOn": null,
+            "Reason": "Sent Success To Service Provider Via HTTP"
         }
     ]
 }
