@@ -29,7 +29,7 @@ As soon as user sends an SMS, the registered endpoint will be sent payload with 
 
 If the response is `HTTP 200`, the webhook is considers as success, otherwise it'll be retried 10 times exponentially.
 
-[Link: Application Registration]:https://dev_server/SmsPortal/WebhookRegistration/Create?utm_source=Docs&utm_medium=Dev
+[Link: Application Registration]:https://<SERVER_NAME>/SmsPortal/WebhookRegistration/Create?utm_source=Docs&utm_medium=Dev
 
 [Link: What is a Webhook]:../webhook
 [Link: Image: Webhook Registration]: ../images/webhook-registration.png
