@@ -185,7 +185,7 @@ HTTP/1.1 200 Ok
 ````
 ````JSON
 {
-    "@odata.context": "http://[Server_Name]/Sms/odata/$metadata#Delivery",
+    "@odata.context": "http://<SERVER_NAME>/Sms/odata/$metadata#Delivery",
     "value": [
         {
             "Id": "18437568-6a70-4ec5-9af4-0731e89760cc",
@@ -291,6 +291,6 @@ That’s all! Happy Coding!
 
 [Endpoint: Batch SMS API]: https://<SERVER_NAME>/SMS/api/Batch
 
-[Endpoint: Delivery OData API]: https://ebiz.bpc.co.in/SMS/odata/Delivery
+[Endpoint: Delivery OData API]: https://<SERVER_NAME>/SMS/odata/Delivery
 
 [Endpoint: OData Basics]: https://www.odata.org/getting-started/basic-tutorial/
