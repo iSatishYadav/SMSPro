@@ -281,16 +281,16 @@ X-SMSPro-CorrelationId: 1ebc758c-605f-4e99-825a-8b5c5ae9656b
 
 That’s all! Happy Coding!
 
-[Link: Application Registration]:https://dev_server/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
+[Link: Application Registration]:https://<SERVER_NAME>/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
 [Link: .NET Client SDK]:../client-sdk
 [Link: Code Samples]:../code-samples
 
-[Endpoint: OAuth2 Token]: https://dev_server/SMS/oauth2/token
+[Endpoint: OAuth2 Token]: https://<SERVER_NAME>/SMS/oauth2/token
 
-[Endpoint: SMS API]: https://dev_server/SMS/api/SMS
+[Endpoint: SMS API]: https://<SERVER_NAME>/SMS/api/SMS
 
-[Endpoint: Batch SMS API]: https://dev_server/SMS/api/Batch
+[Endpoint: Batch SMS API]: https://<SERVER_NAME>/SMS/api/Batch
 
-[Endpoint: Delivery OData API]: https://dev_server/SMS/odata/Delivery
+[Endpoint: Delivery OData API]: https://<SERVER_NAME>/SMS/odata/Delivery
 
 [Endpoint: OData Basics]: https://www.odata.org/getting-started/basic-tutorial/
