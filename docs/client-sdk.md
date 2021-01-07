@@ -10,7 +10,7 @@ Using **SMSPro Client SDK** is literally a one liner. See:
 
 ### 2.1 Code Sample
 ````csharp
-await new SmsProClient("https://<Api Base URL>/SMS/", "<Client Id>", "Client Secret").SendAsync("<Message>", "<Mobile>");
+await new SmsProClient("https://<SERVER_NAME>/SMS/", "<Client Id>", "Client Secret").SendAsync("<Message>", "<Mobile>");
 ````
 
 ### 2.2 [Optional] Code Sample with Logger
@@ -23,7 +23,7 @@ public void Logger(string message)
     Console.WriteLine(message);
 }
 //...
-var client = new SmsProClient("https://<Api Base URL>/SMS/", "<Client Id here>", "Client Secret here", Logger);
+var client = new SmsProClient("https://<SERVER_NAME>/SMS/", "<Client Id here>", "Client Secret here", Logger);
 await client.SendAsync("<Message>", "Mobile");
 ````
 
