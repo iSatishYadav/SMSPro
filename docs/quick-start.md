@@ -281,15 +281,15 @@ X-SMSPro-CorrelationId: 1ebc758c-605f-4e99-825a-8b5c5ae9656b
 
 That’s all! Happy Coding!
 
-[Link: Application Registration]:https://ebiz.bpc.co.in/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
+[Link: Application Registration]:https://<SERVER_NAME>/SmsPortal/Applications/Create?utm_source=Docs&utm_medium=Prod
 [Link: .NET Client SDK]:../client-sdk
 [Link: Code Samples]:../code-samples
 
-[Endpoint: OAuth2 Token]: https://ebiz.bpc.co.in/SMS/oauth2/token
+[Endpoint: OAuth2 Token]: https://<SERVER_NAME>/SMS/oauth2/token
 
-[Endpoint: SMS API]: https://ebiz.bpc.co.in/SMS/api/SMS
+[Endpoint: SMS API]: https://<SERVER_NAME>/SMS/api/SMS
 
-[Endpoint: Batch SMS API]: https://ebiz.bpc.co.in/SMS/api/Batch
+[Endpoint: Batch SMS API]: https://<SERVER_NAME>/SMS/api/Batch
 
 [Endpoint: Delivery OData API]: https://ebiz.bpc.co.in/SMS/odata/Delivery
 
